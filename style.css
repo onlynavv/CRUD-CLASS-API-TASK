@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(255, 170, 170);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 170, 170, 1) 0%,
+    rgba(255, 141, 141, 1) 30%,
+    rgba(255, 177, 87, 1) 69%,
+    rgba(255, 177, 70, 1) 100%
+  );
+}
+
+.user-container,
+.form {
+  max-width: 380px;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-container {
+  background-color: transparent !important;
+}
+
+.user-container > div,
+.main-section > div {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 310px;
+}
+
+.user-container > div > img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.user-info > h1 {
+  font-size: 20px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+.user {
+  box-shadow: 4px 1px 15px 2px rgb(255 236 212);
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.edit-btn {
+  padding: 8px 10px;
+  width: 40%;
+  background-color: rgb(25, 206, 25);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  padding: 8px 10px;
+  width: 40%;
+  background-color: rgb(226, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.save-btn {
+  padding: 8px 10px;
+  width: 50%;
+  background-color: rgb(0, 139, 107);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px !important;
+}
+
+.form > div {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.form > div > button {
+  margin: 5px auto;
+  background: #ff9910;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  width: 50%;
+  font-weight: 900;
+}
+
+.form > div > input {
+  border: solid 1px rgb(226, 226, 226);
+  border-radius: 5px;
+  padding: 7px;
+  outline: none;
+}
+
+.edit-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.edit-input > input {
+  margin-bottom: 10px;
+  border: solid 1px rgb(226, 226, 226);
+  border-radius: 5px;
+  padding: 7px;
+  outline: none;
+}
+
+.display-none {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .main-section > .form {
+    max-width: 650px;
+    width: 410px;
+    padding: 30px;
+  }
+
+  .user-container {
+    max-width: 650px;
+    width: 100% !important;
+  }
+
+  .user-container > .user {
+    width: 410px;
+    padding: 40px 30px;
+  }
+
+  .btn-group {
+    margin-top: 20px;
+  }
+
+  .form > div:nth-child(3) {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .form > div > button {
+    padding: 10px 15px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 12px 10px;
+    border-radius: 6px;
+  }
+
+  .user-container > div > img {
+    width: 100px;
+  }
+}
