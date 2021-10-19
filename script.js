@@ -17,7 +17,7 @@ formArea.innerHTML = `
                                 <input type='text' placeholder='enter pic url' class="userPic">
                             </div>
                             <div>
-                                <button onclick="addFunc()">ADD</button>
+                                <button onclick="addFunc()">ADD <i class="fa fa-user-plus" aria-hidden="true"></i></button>
                             </div>
                         
 `
@@ -46,13 +46,13 @@ const getData = async() => {
                         <div class='user-info'>
                             <h1>${user.name}</h1>
                             <div class='btn-group'>
-                                <button class='edit-btn' onclick="editFunc(${user.id})">Edit</button>
-                                <button id=${user.id} class='delete-btn' onclick='deleteFunc(${user.id})'>Delete</button>
+                                <button class='edit-btn' onclick="editFunc(${user.id})">Edit <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                <button id=${user.id} class='delete-btn' onclick='deleteFunc(${user.id})'>Delete <i class="fa fa-trash-o" aria-hidden="true"></i></button>
                             </div>
                             <div class="edit-input display-none edit-display-${user.id}">
                                 <input type="text" class='editName' id='editName-${user.id}'>
                                 <input type="text" class='editPic' id='editPic-${user.id}'>
-                                <button class="save-btn" onclick='saveFunc(${user.id})'>Save</button>
+                                <button class="save-btn" onclick='saveFunc(${user.id})'>Save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>

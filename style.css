@@ -64,6 +64,10 @@ body {
   box-shadow: 4px 1px 15px 2px rgb(255 236 212);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .btn-group {
   display: flex;
   margin-top: 10px;
@@ -143,10 +147,15 @@ body {
   border-radius: 5px;
   padding: 7px;
   outline: none;
+  width: 80%;
 }
 
 .display-none {
   display: none;
+}
+
+i {
+  margin-left: 3px;
 }
 
 @media screen and (min-width: 650px) {
